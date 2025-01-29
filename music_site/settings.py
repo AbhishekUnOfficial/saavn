@@ -68,8 +68,9 @@ TEMPLATES = [
     },
 ]
 
+# WSGI_APPLICATION = 'music_site.wsgi.application'
+# vercel config
 WSGI_APPLICATION = 'music_site.wsgi.app'
-
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
