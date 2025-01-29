@@ -1,9 +1,0 @@
-services:
-  saavn:
-    build: .
-    command: bash -c "python manage.py runserver"
-    container_name: saavn
-    volumes:
-      -.:/saavn
-    ports:
-      -8056:8056
