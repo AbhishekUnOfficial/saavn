@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "music_site/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "music_site/wsgi.py"
+        }
+    ]
+}
