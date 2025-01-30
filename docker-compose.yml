@@ -1,0 +1,8 @@
+services:
+  saavn:
+    container_name: saavn
+    image: saavn-image
+    ports:
+      - 8001:8000
+    volumes:
+      - .:/app
